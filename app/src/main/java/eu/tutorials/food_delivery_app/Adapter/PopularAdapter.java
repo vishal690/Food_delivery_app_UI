@@ -1,5 +1,6 @@
-package eu.tutorials.food_delivery_app.Adoptor;
+package eu.tutorials.food_delivery_app.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +16,15 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
+import eu.tutorials.food_delivery_app.Activity.ShowDetailActivity;
 import eu.tutorials.food_delivery_app.Domain.FoodDomain;
 import eu.tutorials.food_delivery_app.R;
 
 
-public class PopularAdeptor extends RecyclerView.Adapter<PopularAdeptor.ViewHolder> {
+public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHolder> {
 
     ArrayList<FoodDomain> popularFood;
-    public PopularAdeptor(ArrayList<FoodDomain> popularFood){
+    public PopularAdapter(ArrayList<FoodDomain> popularFood){
         this.popularFood = popularFood;
     }
 
@@ -33,7 +35,7 @@ public class PopularAdeptor extends RecyclerView.Adapter<PopularAdeptor.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PopularAdeptor.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull PopularAdapter.ViewHolder holder, int position) {
         holder.title.setText(popularFood.get(position).getTitle());
         holder.fee.setText(String.valueOf(popularFood.get(position).getFee()));
 
@@ -43,6 +45,15 @@ public class PopularAdeptor extends RecyclerView.Adapter<PopularAdeptor.ViewHold
         Glide.with(holder.itemView.getContext())
                 .load(drawableresourceId)
                 .into(holder.pic);
+
+        holder.addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(holder.itemView.getContext(), ShowDetailActivity.class);
+                intent.putExtra("object", popularFood.get(position));
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

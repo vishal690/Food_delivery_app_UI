@@ -1,4 +1,4 @@
-package eu.tutorials.food_delivery_app.Adoptor;
+package eu.tutorials.food_delivery_app.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,10 +21,10 @@ import eu.tutorials.food_delivery_app.Domain.CategaryDomain;
 import eu.tutorials.food_delivery_app.R;
 
 
-public class CategaryAdeptor extends RecyclerView.Adapter<CategaryAdeptor.ViewHolder> {
+public class CategaryAdeapter extends RecyclerView.Adapter<CategaryAdeapter.ViewHolder> {
 
     ArrayList<CategaryDomain>categaryDomains;
-    public CategaryAdeptor(ArrayList<CategaryDomain> categaryDomains){
+    public CategaryAdeapter(ArrayList<CategaryDomain> categaryDomains){
         this.categaryDomains = categaryDomains;
     }
 
@@ -35,7 +35,7 @@ public class CategaryAdeptor extends RecyclerView.Adapter<CategaryAdeptor.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CategaryAdeptor.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CategaryAdeapter.ViewHolder holder, int position) {
         holder.categoryName.setText(categaryDomains.get(position).getTitle());
         String picUrl = "";
         switch (position){
