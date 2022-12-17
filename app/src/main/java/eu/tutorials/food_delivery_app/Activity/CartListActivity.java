@@ -58,7 +58,7 @@ public class CartListActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        recyclerViewList = findViewById(R.id.recyclerView);
+//        recyclerViewList = findViewById(R.id.recyclerView);
         totalFeeTxt = findViewById(R.id.totalFeeText);
         taxTxt = findViewById(R.id.taxText);
         deliveryTxt = findViewById(R.id.deliveryText);

@@ -41,7 +41,7 @@ public class CartListAdapter  extends RecyclerView.Adapter<CartListAdapter.ViewH
     public void onBindViewHolder(@NonNull CartListAdapter.ViewHolder holder, int position) {
         holder.title.setText(foodDomains.get(position).getTitle());
         holder.feeEachItem.setText(String.valueOf(foodDomains.get(position).getFee()));
-        holder.totalEachItem.setText(String.valueOf(Math.round(foodDomains.get(position).getNumberInCart()*foodDomains.get(position).getFee())*100/100));
+        holder.totalEachItem.setText(String.valueOf(Math.round((foodDomains.get(position).getNumberInCart()*foodDomains.get(position).getFee())*100)/100));
         holder.num.setText(String.valueOf(foodDomains.get(position).getNumberInCart()));
         int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(foodDomains.get(position).getPic()
                 ,"drawable",holder.itemView.getContext().getPackageName());
