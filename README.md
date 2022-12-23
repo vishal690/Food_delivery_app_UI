@@ -23,13 +23,14 @@ It acts as a link between the Model and the View. It’s responsible for transfo
 
 
 # ScreenShort
+![Screenshot 2022-12-23 142911](https://user-images.githubusercontent.com/100077067/209305917-a7011ed6-5f85-45b4-924b-10aa45bdd8c7.jpg)
+![Screenshot 2022-12-23 142942](https://user-images.githubusercontent.com/100077067/209305932-871d3fb5-9547-4cde-9fb6-b7c6b2bc7611.jpg)
+
+![Screenshot 2022-12-23 142957](https://user-images.githubusercontent.com/100077067/209305948-ccc45bb5-80ea-4f59-9c27-1e1711d64db2.jpg)
+![Screenshot 2022-12-23 143027](https://user-images.githubusercontent.com/100077067/209305955-dc8fe58d-7472-4513-994f-e2a2826c934e.jpg)
 
 
-![Screenshot 2022-12-23 112538](https://user-images.githubusercontent.com/100077067/209281550-66bdd8c1-495e-45f3-a666-b2597ca566b6.jpg)
-![Screenshot 2022-12-23 112608](https://user-images.githubusercontent.com/100077067/209281557-b8b4f930-e89e-4901-a8cd-d8a79e8de2b7.jpg)
 
-![Screenshot 2022-12-23 112628](https://user-images.githubusercontent.com/100077067/209281566-9858783a-9f32-4910-b430-f1fbb1eade84.jpg)
-![Screenshot 2022-12-23 112651](https://user-images.githubusercontent.com/100077067/209281570-b3fd629b-3113-49ea-896e-53a12323bad2.jpg)
 
 # Video Sample
 
