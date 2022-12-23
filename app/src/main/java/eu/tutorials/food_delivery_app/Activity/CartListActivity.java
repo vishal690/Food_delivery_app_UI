@@ -38,7 +38,10 @@ public class CartListActivity extends AppCompatActivity {
         initList();
         CalculateCart();
         bottomNavigation();
+
+
     }
+
     private void bottomNavigation(){
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
